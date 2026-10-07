@@ -1,0 +1,10 @@
+--- a/index.js	
++++ b/index.js	
+@@ -15,4 +15,7 @@
+     return Number.isFinite ? Number.isFinite(+num) : isFinite(+num);
+   }
+   return false;
+ };
++
++// Marker that shows the patch was applied
++module.exports.patched = true;
